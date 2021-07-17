@@ -7,7 +7,6 @@ A hotel reservation system is built with Flask. This system can show, delete, in
 More details about how to design a database, including : ER diagram, relationship description, entity description and relation schema, 
 [click here](https://github.com/gsdndeer/Hostel-Reservation-System/blob/main/files/er_model.pdf)
 
-
 ## Core Features
 * Show customer data
 * Delete customer data
