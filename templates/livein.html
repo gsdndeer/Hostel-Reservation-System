@@ -1,0 +1,67 @@
+{% extends 'layout.html' %}
+
+{% block body %}
+    <!-- title -->
+    <h1>Find Customer Lives in which Hostel</h1>
+
+    <!-- show massage -->
+    {% if error %}
+    <div class="alert alert-danger">{{error}}</div>
+    {% endif %}
+
+    {% if msg %}
+    <div class="alert alert-success">{{msg}}</div>
+    {% endif %}
+    
+    <!-- customer query form -->
+    {% from "includes/_formhelpers.html" import render_field %}  
+    <form method="POST" action="">
+        <div class="form-group">
+            {{render_field(form.tool, class_="form-control")}}
+        </div>
+        <p><input type="submit" value="continue"></p>
+        
+        {% if tool == "Button" %}
+        <div class="form-group">
+            {{render_field(form.live, class_="form-control")}}
+        </div>
+        <div class="form-group">
+            {{render_field(form.hnum, class_="form-control")}}
+        </div>
+        <p><input type="submit" value="Insert"></p><br/><br/>   
+        {% endif %}
+
+        {% if tool == "SQL" %}
+        <div class="form-group">
+            {{render_field(form.text, class_="form-control")}}
+        </div>      
+        <p><input type="submit" value="Insert"></p><br/><br/>     
+        {% endif %}    
+         
+    </form>
+
+    <!-- show result -->
+    {% if result %}
+    <h1>Customer Data</h1>
+    <table class="table table-striped">
+        <tr>
+            <th>Id</th>
+            <th>Name</th>
+            <th>Sex</th>
+            <th>Age</th>
+            <th>HNum</th>
+            <th>MNum</th>
+        </tr>
+        {% for r in result %}
+            <tr>
+                <td>{{r[0]}}</td>
+                <td>{{r[1]}}</td>
+                <td>{{r[2]}}</td>
+                <td>{{r[3]}}</td>
+                <td>{{r[4]}}</td>
+                <td>{{r[5]}}</td>
+            </tr>
+        {% endfor %}
+    </table>
+    {% endif %}
+{% endblock %}

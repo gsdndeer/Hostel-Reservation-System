@@ -1,0 +1,36 @@
+{% extends 'layout.html' %}
+
+{% block body %}
+    <!-- title -->
+    <h1>Count Customer Number</h1>
+
+    <!-- show massage -->
+    {% if error %}
+    <div class="alert alert-danger">{{error}}</div>
+    {% endif %}
+
+    {% if msg %}
+    <div class="alert alert-success">{{msg}}</div>
+    {% endif %}
+    
+    <!-- customer query form -->
+    {% from "includes/_formhelpers.html" import render_field %}  
+    <form method="POST" action="">
+        <div class="form-group">
+            {{render_field(form.tool, class_="form-control")}}
+        </div>        
+        <p><input type="submit" value="continue"></p>
+        {% if tool == "SQL" %}
+        <div class="form-group">
+            {{render_field(form.text, class_="form-control")}}
+        </div>      
+        <p><input type="submit" value="Search"></p><br/><br/>     
+        {% endif %}    
+         
+    </form>
+
+    <!-- show result -->
+    {% if result %}
+    <h3>The total number of customers is {{result[0][0]}}</h3>
+    {% endif %}
+{% endblock %}
