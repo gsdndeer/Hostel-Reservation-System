@@ -15,8 +15,8 @@ A hotel reservation system is built with Flask. This system can show, delete, in
 * Count total meal revenue
 
 ## Environments
-Python 3.6.8
-Flask 2.0.0
+* Python 3.6.8
+* Flask 2.0.0
 
 ## Usage
 1. Clone the repository
