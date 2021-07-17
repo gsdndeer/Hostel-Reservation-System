@@ -1,6 +1,7 @@
 # Hostel-Reservation-System
 
 A hotel reservation system is built with Flask. This system can show, delete, insert, update customer data and search some advanced customer information.
+* More details on how to design a database, including : ER diagram, relationship description and entity description, [click here]()
 
 <img src="https://github.com/gsdndeer/Hostel-Reservation-System/blob/main/figures/demo.gif">
 
