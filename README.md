@@ -23,7 +23,4 @@ A hotel reservation system is built with Flask. This system can show, delete, in
 ```
 git clone https://github.com/gsdndeer/Hostel-Reservation-System.git
 ```
-2.
-```
-python app.py
-```
+2. Run ```python app.py```
