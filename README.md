@@ -14,9 +14,11 @@ A hotel reservation system is built with Flask. This system can show, delete, in
 * Count customer number
 * Count total meal revenue
 
-## Environments
-* Python 3.6.8
-* Flask 2.0.0
+## Technology Stack used
+* Programming languages - Python, HTML
+* Framework - Flask
+* Database - SQLite3
+* Database management tool - DBeaver
 
 ## Usage
 1. Clone the repository
