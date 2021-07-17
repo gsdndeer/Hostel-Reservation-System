@@ -4,7 +4,7 @@ A hotel reservation system is built with Flask. This system can show, delete, in
 
 <img src="https://github.com/gsdndeer/Hostel-Reservation-System/blob/main/figures/demo.gif">
 
-More details on how to design a database, including : ER diagram, relationship description, entity description and relation schema, 
+More details about how to design a database, including : ER diagram, relationship description, entity description and relation schema, 
 [click here](https://github.com/gsdndeer/Hostel-Reservation-System/blob/main/files/er_model.pdf)
 
 
